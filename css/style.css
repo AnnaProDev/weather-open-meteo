@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,400;8..144,700&display=swap');
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: 'Roboto Serif', serif;
+	background: url("../img/background1.svg") center center / cover no-repeat;
+	display: flex;
+	justify-content: center;
+	color: #fff;
+	align-items: center;
+	min-height: 100vh;
+	flex-direction: column;
+}
+input {
+	padding: 1rem;
+	border-radius: 10px;
+	border: none;
+	font-family: inherit;
+	border: 2px solid rgba(248,250,252,.7);
+	border-radius: 15px;
+	background-color: rgba(28,27,69, 0.6);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	min-width: 300px;
+	font-size: 1.5rem;
+	color: #fff;
+}
+input:focus {
+	outline: none;
+}
+
+#button {
+	display: block;
+	margin: 20px auto 0 auto;
+	width: 150px;
+	height: 50px;
+	border-radius: 10px;
+	border: 2px solid rgba(248,250,252,.7);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	background-color:rgba(22,3,41, 0.8);
+	color: #fff;
+	font-size: 1.2rem;
+}
+
+#button:hover {
+	background-color: #390768;
+	box-shadow: 0 6px 15px rgba(1, 1, 1, 0.5);
+
+}
+
+.weather {
+	margin-top: 20px;
+	border: 2px solid rgba(248,250,252,.7);
+	border-radius: 15px;
+	background-color: rgba(28,27,69, 0.6);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	font-size: 2rem;
+	padding: 30px 15px;
+}
+
+.weather h3 {
+	margin: 0;
+} 
+
+.weather h2 {
+	margin: 0;
+	display: flex;
+	align-items: center;
+} 
