@@ -30,7 +30,7 @@ const WMO = {
 const setActive = (t) => tabs.forEach(a => a.classList.toggle('active', a.dataset.tab === t));
 const show = (msg) => { cityLine.textContent = place ? `${place.name} — ${place.country}` : '—'; valueLine.textContent = msg; };
 
-// --- API
+// API
 async function geocode(city) {
   const url = API_GEOCODE  + '?name=' + encodeURIComponent(city)  + '&count=1&language=en';
   const res = await fetch(url);
