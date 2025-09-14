@@ -17,7 +17,7 @@ Curious what the app can do? Here are the highlights:
 
 ### Now, Not Later
 
-The app focuses on current conditions only — no clutter. Enter a city and see what it’s like right now.
+The app focuses on current conditions only - no clutter. Enter a city and see what it’s like right now.
 
 ### Three Tiny Tabs
 
@@ -30,7 +30,7 @@ Type a city name and the app uses Open-Meteo Geocoding to find the best match (n
 
 ### Lightweight & Beginner-Friendly
 
-No frameworks, no build step — just HTML/CSS/JS. The code is short, readable, and easy to tweak.
+No frameworks, no build step - just HTML/CSS/JS. The code is short, readable, and easy to tweak.
 
 ![mode-image](https://github.com/user-attachments/files/22323422/img-app-weather2.bmp)
 
