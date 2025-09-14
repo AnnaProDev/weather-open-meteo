@@ -34,6 +34,16 @@ No frameworks, no build step — just HTML/CSS/JS. The code is short, readable, 
 
 ![mode-image](https://github.com/user-attachments/files/22323422/img-app-weather2.bmp)
 
+### Getting Started
+1. Clone or download the repo.
+
+2. Open index.html directly, or serve the folder with a static server (recommended):
+
+     - Python: python -m http.server 8000
+     - Node: npx http-server .
+
+3. Type a city (e.g., “Charlotte”), press GO, then click the tabs.
+
 ## Check out the Application
 
 Find the application running at [HERE](https://annaprodev.github.io/weather-open-meteo/)
