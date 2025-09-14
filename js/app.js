@@ -1,15 +1,15 @@
-// --- Elements
+// Elements
 const form = document.getElementById('form');
 const search = document.getElementById('search');
 const cityLine = document.getElementById('cityLine');
 const valueLine = document.getElementById('valueLine');
 const tabs = document.querySelectorAll('.tabs .tab');
 
-// --- State
+// State
 let place = null;             // { name, country, lat, lon }
 let tab = 'temperatures';     // 'temperatures' | 'conditions' | 'wind'
 
-// --- Constants
+// Constants
 const API_GEOCODE  = 'https://geocoding-api.open-meteo.com/v1/search';
 const API_FORECAST = 'https://api.open-meteo.com/v1/forecast';
 const WMO = {
@@ -26,7 +26,7 @@ const WMO = {
   95:'Thunderstorm',96:'Thunderstorm with slight hail',99:'Thunderstorm with heavy hail'
 };
 
-// --- UI helpers
+// UI helpers
 const setActive = (t) => tabs.forEach(a => a.classList.toggle('active', a.dataset.tab === t));
 const show = (msg) => { cityLine.textContent = place ? `${place.name} — ${place.country}` : '—'; valueLine.textContent = msg; };
 
@@ -43,7 +43,7 @@ async function geocode(city) {
 			  lon: g.longitude };
 }
 
-//Get current data for city
+// Get current data for city
 async function getCurrent({ lat, lon }) {
 const url = API_FORECAST
   + '?latitude='  + encodeURIComponent(lat)
@@ -56,7 +56,7 @@ const url = API_FORECAST
   return res.json();
 }
 
-// --- Render
+// Render
 async function render() {
   show('Loading…');
   try {
@@ -76,7 +76,7 @@ async function render() {
   }
 }
 
-// --- Events for search form
+// Events for search form
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
   const q = search.value.trim();
@@ -100,5 +100,5 @@ tabs.forEach(a => {
   });
 });
 
-// --- Init
+// Init
 setActive(tab);
