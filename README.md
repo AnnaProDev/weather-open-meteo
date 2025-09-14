@@ -36,8 +36,7 @@ No frameworks, no build step — just HTML/CSS/JS. The code is short, readable, 
 
 ## Check out the Application
 
-Find the application running at [https://store.annap[Uploading img-app-weather2.bmp…]()
-rodev.com](https://store.annaprodev.com).
+Find the application running at [HERE](https://annaprodev.github.io/weather-open-meteo/)
 
 ## Contributions
 
