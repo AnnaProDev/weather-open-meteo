@@ -5,7 +5,7 @@
 body {
 	margin: 0;
 	font-family: 'Roboto Serif', serif;
-	background: url("../img/background1.svg") center center / cover no-repeat;
+	background: url("../img/3280347.jpg") center center / cover no-repeat;
 	display: flex;
 	color: #fff;
 	align-items: center;
@@ -24,7 +24,7 @@ body {
 	display: block;
 	border-radius: 10px;
 	cursor: pointer;
-	color: #fff;
+	color: #cfc7f4;
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 1.5rem;
@@ -33,11 +33,11 @@ body {
 }
 
 .tab:hover {
-	color:#D862A4;
+	color:#f08ab3;
 }
 
 .tab.active {
-	color:#f3a1cf;
+	color:#F1B0CA;
 	text-decoration: underline;
 }
 
@@ -98,5 +98,5 @@ input:focus {
 }
 
 .weather h3 {
-	color:#eeb0d3;
+	color:#F1B0CA;
 }
